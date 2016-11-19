@@ -21,9 +21,11 @@ int main(){
              if(n==5){
                 return 0;
              }
-             printf("  정답 : ");
-             scanf(" %s", arr);
-             answera(arr, i-1);
+             else{
+                printf("  정답 : ");
+                scanf(" %s", arr);
+                answera(arr, i-1);
+             }
          }
      }
      return 0;
@@ -38,9 +40,11 @@ int main(){
                 n+1;
                 return;
             }
-            printf("   정답 : ");
-            scanf(" %s", brr);
-            answerb(brr, j-1);
+            else{
+                printf("   정답 : ");
+                scanf(" %s", brr);
+                answerb(brr, j-1);
+            }
          }
      }
      else{
@@ -62,9 +66,11 @@ int main(){
                 n+1;
                 return;
             }
-            printf("   정답 : ");
-            scanf(" %s", crr);
-            answerc(crr, k-1);
+            else{
+                printf("   정답 : ");
+                scanf(" %s", crr);
+                answerc(crr, k-1);
+            }
          }
      }
      else{
@@ -86,9 +92,11 @@ void answerc(char crr[], int k) {
                 n+1;
                 return;
             }
-            printf("   정답 : ");
-            scanf(" %s", drr);
-            answerd(drr, l-1);
+            else{
+                printf("   정답 : ");
+                scanf(" %s", drr);
+                answerd(drr, l-1);
+            }
          }
      }
      else{
@@ -111,9 +119,11 @@ void answerd(char drr[], int l) {
                 n+1;
                 return;
             }
-            printf("   정답 : ");
-            scanf(" %s", err);
-            answere(err, m-1);
+            else{
+                printf("   정답 : ");
+                scanf(" %s", err);
+                answere(err, m-1);
+            }
          }
      }
      else{
