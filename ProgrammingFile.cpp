@@ -30,10 +30,12 @@ int answera(char arr[], int i) {
     if(arr[0]=='i'&&arr[1]=='n'&&arr[2]=='c'&&arr[3]=='l'&&arr[4]=='u'&&arr[5]=='d'&&arr[6]=='e'){
         printf("   정답입니다. 다음문제로 넘어갑니다\n\n");
         printf("   2. mjppt btwqi (Keyword : F)\n\n");
-        printf("   정답 : ");
-        scanf(" %s", brr);
-        answerb(brr, j-1);
+        for(j=5;j>0;j++){
+            printf("   정답 : ");
+            scanf(" %s", brr);
+            answerb(brr, j-1);
         }
+    }
     else{
         if(i>0){
             printf(" 틀렸습니다. 기회는 %d 번 남았습니다. 다시 풀어주세요\n\n", i);
