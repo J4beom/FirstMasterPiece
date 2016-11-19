@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int i, j, k, l, m;
+int i, j, k, l, m, n=0;
 char arr[100]={ }, brr[100]={ }, crr[100]={ }, drr[100]={ }, err[100]={ };
 void answera(char arr[], int i);
 void answerb(char brr[], int j);
@@ -18,6 +18,9 @@ int main(){
          printf("\n\n\n\n   그럼 시작합니다\n\n   ※주의 ! 한 문제 당 기회는 5번입니다.\n   모두 소문자로 입력해주세요\n   띄어쓰기는 생략해주세요(오류 나요)\n\n");
          printf("   1. afudmvw (Keyword : S)\n\n");
          for(i=5;i>0;i--){
+             if(n==5){
+                return 0;
+             }
              printf("  정답 : ");
              scanf(" %s", arr);
              answera(arr, i-1);
@@ -31,6 +34,10 @@ int main(){
          printf("   정답입니다. 다음문제로 넘어갑니다\n\n");
          printf("   2. mjppt btwqi (Keyword : F)\n\n");
          for(j=5;j>0;j--){
+            if(n==4){
+                n+1;
+                return;
+            }
             printf("   정답 : ");
             scanf(" %s", brr);
             answerb(brr, j-1);
@@ -51,6 +58,10 @@ int main(){
          printf("   정답입니다. 다음문제로 넘어갑니다\n\n");
          printf("   3. rtqitcookpi (Keyword : C)\n\n");
          for(k=5;k>0;k--){
+            if(n==3){
+                n+1;
+                return;
+            }
             printf("   정답 : ");
             scanf(" %s", crr);
             answerc(crr, k-1);
@@ -64,13 +75,17 @@ int main(){
              printf(" 남은 기회가 없습니다. 처음부터 다시 시작해주세요\n");
          }
      }
-     return;ht
+     return;
 }
 void answerc(char crr[], int k) {
      if(crr[0]=='p'&&crr[1]=='r'&&crr[2]=='o'&&crr[3]=='g'&&crr[4]=='r'&&crr[5]=='a'&&crr[6]=='m'&&crr[7]=='m'&&crr[8]=='i'&&crr[9]=='n'&&crr[10]=='g'){
          printf("   정답입니다. 다음문제로 넘어갑니다\n\n");
          printf("   4. zmupne zctpyeletzy (Keyword : L)\n\n");
          for(l=5;l>0;l--){
+            if(n==2){
+                n+1;
+                return;
+            }
             printf("   정답 : ");
             scanf(" %s", drr);
             answerd(drr, l-1);
@@ -92,6 +107,10 @@ void answerd(char drr[], int l) {
          printf("   정답입니다. 다음문제로 넘어갑니다\n\n");
          printf("   5. jp zpv xbou up ep tpnfuijoh, ep ju (Keyword : B)\n\n");
          for(m=5;m>0;m--){
+            if(n==1){
+                n+1;
+                return;
+            }
             printf("   정답 : ");
             scanf(" %s", err);
             answere(err, m-1);
@@ -112,6 +131,8 @@ void answere(char err[], int m) {
      if(err[0]=='i'&&err[1]=='f'&&err[2]=='y'&&err[3]=='o'&&err[4]=='u'&&err[5]=='w'&&err[6]=='a'&&err[7]=='n'&&err[8]=='t'&&err[9]=='t'&&err[10]=='o'&&err[11]=='d'&&err[12]=='o'&&err[13]=='s'&&err[14]=='o'&&err[15]=='m'&&err[16]=='e'&&err[17]=='t'&&err[18]=='h'&&err[19]=='i'&&err[20]=='n'&&err[21]=='g'&&err[22]=='d'&&err[23]=='o'&&err[24]=='i'&&err[25]=='t'){
          printf("   정답입니다. 수고하셨습니다\n\n");
          printf("   당신은 노가다의 왕입니다");
+         n+1;
+         return;
      }
      else{
          if(m>0){
